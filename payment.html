@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran</title>
+    <link rel="icon" type="image/png" href="assets/logofull.svg" />
+    <link rel="stylesheet" href="payment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <main class="payment-container">
+        <h1>Pembayaran</h1>
+
+        <div class="payment-summary">
+            <h2>Ringkasan Pembayaran</h2>
+            <div class="course-info">
+                <img src="assets/2.svg" alt="Thumbnail Kursus">
+                <div>
+                    <p class="course-title">Machine Learning: Dasar hingga Implementasi</p>
+                    <p class="course-price">Rp. 100.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="transfer-instructions">
+            <h2>Transfer Manual</h2>
+            <p>Silakan transfer ke rekening berikut:</p>
+            <div class="bank-info">
+                <p><strong>Bank:</strong> BCA</p>
+                <p><strong>No. Rekening:</strong> 1234567890</p>
+                <p><strong>Nama Penerima:</strong> PT. Edukasi Digital</p>
+            </div>
+            <p>Setelah melakukan transfer, silakan unggah bukti pembayaran melalui tombol di bawah ini.</p>
+            <label for="bukti-transfer" class="upload-label">
+                <i class="fas fa-upload"></i> Unggah Bukti Pembayaran
+                <input type="file" id="bukti-transfer" hidden>
+            </label>
+            <button class="submit-button" onclick="showPopup()">Konfirmasi Pembayaran</button>
+        </div>
+    </main>
+
+    <!-- Popup Success -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <h2>Pembayaran Berhasil!</h2>
+            <p>Terima kasih, bukti pembayaran Anda telah kami terima.</p>
+            <a href="profil.html" class="profile-button">Cek Status</a>
+        </div>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>

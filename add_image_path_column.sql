@@ -1,0 +1,2 @@
+ALTER TABLE courses
+ADD COLUMN image_path VARCHAR(255) NOT NULL AFTER price; 

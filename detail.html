@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Kursus</title>
+    <link rel="icon" type="image/png" href="assets/logofull.svg" />
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="assets/elogo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <a href="home.html">Beranda</a>
+            <a href="kursus.html" class="active">Cari Kursus</a>
+            <a href="aktivitas.html">Aktivitas</a>
+        </nav>
+        <div class="right-menu">
+            <a href="keranjang.html"><i class="fa fa-shopping-basket"></i></a>
+            <a href="profil.html" class="profile-link">
+                <i class="fa fa-user"></i> <span>Profil</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Detail Konten -->
+    <main class="course-detail">
+        <section class="course-header">
+            <div class="title-video-wrapper">
+                <div class="title">
+                    <h1>Machine Learning:<br>Dasar hingga Implementasi</h1>
+                </div>
+                <div class="video-intro">
+                    <video controls width="100%" height="auto" poster="thumbnail.jpg">
+                        <source src="assets/introduction.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung video ini.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-description">
+            <h2>Deskripsi:</h2>
+            <p>
+                Course ini dirancang untuk memberikan pemahaman mendalam tentang konsep dasar Machine Learning serta
+                penerapannya dalam dunia nyata.
+                Peserta akan mempelajari algoritma-algoritma populer seperti Linear Regression, Decision Tree, K-Nearest
+                Neighbors, dan Neural Networks.
+                Dengan pendekatan praktis, course ini juga mencakup latihan langsung menggunakan Python dan pustaka
+                seperti Scikit-learn dan TensorFlow.
+            </p>
+
+            <h3>Topik yang Dipelajari:</h3>
+            <ul>
+                <li>Pengenalan Machine Learning dan jenis-jenisnya</li>
+                <li>Proses preprocessing data</li>
+                <li>Algoritma Supervised & Unsupervised Learning</li>
+                <li>Evaluasi model dan overfitting</li>
+                <li>Implementasi model dengan Python (Scikit-learn & TensorFlow)</li>
+                <li>Studi kasus proyek mini</li>
+            </ul>
+
+            <p><strong>Level:</strong> Pemula hingga Menengah</p>
+
+            <h3>Prasyarat:</h3>
+            <ul>
+                <li>Pemahaman dasar Python</li>
+                <li>Logika pemrograman dan matematika dasar (aljabar & statistik)</li>
+            </ul>
+
+            <div class="cta-button">
+                <a href="payment.html" class="buy-button">Beli Kursus</a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 E-Course. Semua Hak Dilindungi.</p>
+            <p>Dibuat dengan ❤️ oleh Tim E-Course</p>
+        </div>
+    </footer>
+</body>
+
+</html>

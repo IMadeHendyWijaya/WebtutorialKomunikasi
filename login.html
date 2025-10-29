@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - E-Course</title>
+    <link rel="icon" type="image/png" href="assets/logofull.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="login.css" />
+</head>
+
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h3 class="login-title">Login ke E-Course</h3>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="role" class="form-label">Login Sebagai</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Pilih Peran --</option>
+                        <option value="user">Pengguna</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="nama@email.com" required />
+                </div>
+
+                <div class="form-group password-wrapper">
+                    <label for="password" class="form-label">Kata Sandi</label>
+                    <input type="password" name="password" id="password" placeholder="********" required />
+                </div>
+
+                <button type="submit" class="btn-submit">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Mencegah form dikirim ke server
+
+            const role = document.getElementById('role').value;
+
+            if (role === 'user') {
+                window.location.href = 'home.html';
+            } else if (role === 'admin') {
+                window.location.href = 'dashboard-admin.html';
+            } else {
+                alert('Silakan pilih peran terlebih dahulu.');
+            }
+        });
+    </script>
+</body>
+
+</html>
